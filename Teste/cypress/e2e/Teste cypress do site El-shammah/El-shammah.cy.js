@@ -58,12 +58,10 @@ describe('Testes Funcionais do site El-shammah crew', () => {
         cy.contains('B.boy Sidarta').should('be.visible').scrollIntoView();
         cy.contains('B.boy Iron').should('be.visible').scrollIntoView();
         cy.contains('B.boy King').should('be.visible').scrollIntoView();
-
         cy.get('#integrantes > .swiper > .swiper-pagination > [aria-label="Go to slide 4"]').click();
         cy.contains('B.girl Emilly').should('be.visible').scrollIntoView();
         cy.contains('B.boy Osmar').should('be.visible').scrollIntoView();
         cy.contains('B.boy Jeff').should('be.visible').scrollIntoView();
-
         cy.get('#integrantes > .swiper > .swiper-pagination > [aria-label="Go to slide 7"]').click();
         cy.contains('B.boy Macorrone').should('be.visible').scrollIntoView();
     });
